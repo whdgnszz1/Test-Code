@@ -27,10 +27,16 @@ dependencies {
     runtimeOnly 'com.mysql:mysql-connector-j'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-    implementation 'com.fasterxml.jackson.core:jackson-core:2.14.1'
-    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.1'
-    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
-    implementation 'org.springdoc:springdoc-openapi-ui:1.6.14'
+
+    // Jackson 라이브러리 설정
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.15.0'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.0'
+    implementation 'com.fasterxml.jackson.module:jackson-module-parameter-names:2.15.0'
+    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.15.0'
+
+    // SpringDoc 설정
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
