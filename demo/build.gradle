@@ -27,6 +27,7 @@ dependencies {
     runtimeOnly 'com.mysql:mysql-connector-j'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 
     // Jackson 라이브러리 설정
     implementation 'com.fasterxml.jackson.core:jackson-core:2.15.0'
